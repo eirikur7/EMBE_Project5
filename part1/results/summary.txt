@@ -1,0 +1,22 @@
+=== shell_idle
+shortest 5966.9 us   average 10935.4 us   longest 14277.4 us   missed 0 of 200
+=== poll_idle
+shortest 9.6 us   average 91.9 us   longest 185.9 us   missed 0 of 1000
+=== events_idle
+shortest 55.5 us   average 65.9 us   longest 147.5 us   missed 0 of 1000
+=== shell_load
+shortest 8421.5 us   average 9859.9 us   longest 27740.8 us   missed 0 of 200
+=== poll_load
+shortest 9.7 us   average 105.8 us   longest 2121.6 us   missed 0 of 1000
+=== events_load
+shortest 37.3 us   average 121.4 us   longest 5825.3 us   missed 0 of 1000
+=== shell_load_rt
+shortest 7728.0 us   average 8299.3 us   longest 12555.8 us   missed 0 of 200
+=== poll_load_rt
+shortest 10.2 us   average 72.8 us   longest 141.7 us   missed 0 of 1000
+=== events_load_rt
+shortest 32.8 us   average 76.8 us   longest 189.9 us   missed 0 of 1000
+=== lkm_idle
+shortest 5.4 us   average 9.3 us   longest 49.2 us   missed 0 of 1000
+=== lkm_load
+shortest 5.6 us   average 16.8 us   longest 66.5 us   missed 0 of 1000

@@ -1,0 +1,20 @@
+// Device tree overlay for encoder.ko. Tells the kernel which pins the encoder is on.
+// Build: dtc -@ -I dts -O dtb -o encoder-overlay.dtbo encoder-overlay.dts
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2837";
+
+	fragment@0 {
+		target-path = "/";
+		__overlay__ {
+			encoder {
+				compatible = "custom,encoder";    // must match the module
+				status = "okay";
+				c1-gpios = <&gpio 25 0>;          // GPIO25, header pin 22
+				c2-gpios = <&gpio 24 0>;          // GPIO24, header pin 18
+			};
+		};
+	};
+};

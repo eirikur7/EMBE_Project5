@@ -1,0 +1,20 @@
+// Device tree overlay for gpio_copy.ko. Tells the kernel which pins the module uses.
+// Build: dtc -@ -I dts -O dtb -o gpio-copy-overlay.dtbo gpio-copy-overlay.dts
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2837";
+
+	fragment@0 {
+		target-path = "/";
+		__overlay__ {
+			gpio-copy {
+				compatible = "custom,gpio-copy";    // must match the module
+				status = "okay";
+				input-gpios  = <&gpio 25 0>;        // GPIO25, header pin 22
+				output-gpios = <&gpio 17 0>;        // GPIO17, header pin 11
+			};
+		};
+	};
+};

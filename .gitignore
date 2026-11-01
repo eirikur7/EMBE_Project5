@@ -1,0 +1,19 @@
+# kernel module build output
+*.o
+*.ko
+*.mod
+*.mod.c
+.*.cmd
+Module.symvers
+modules.order
+*.dtbo
+
+
+part1/gpio_poll
+part1/gpio_events
+part1/response_test
+part2/motor_control
+part2/read_encoder
+part1_old
+part2_old
+submission
